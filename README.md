@@ -1,6 +1,6 @@
 # Instaclone Web
 
-- [ ] Router
+- [x] Router
 - [ ] Authentication
 - [ ] Arch.
 - [ ] Styles
