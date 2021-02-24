@@ -51,7 +51,7 @@ function SingUp() {
   const onCompleted = (data) => {
     const { username, password } = getValues();
     const {
-      createAccount: { ok, error },
+      createAccount: { ok },
     } = data;
     if (!ok) {
       return;
@@ -65,7 +65,7 @@ function SingUp() {
   const [createAccount, { loading }] = useMutation(CREATE_ACCOUNT_MUTATION, {
     onCompleted,
   });
-  const { register, handleSubmit, errors, formState, getValues } = useForm({
+  const { register, handleSubmit, formState, getValues } = useForm({
     mode: "onChange",
   });
   const onSubmitValid = (data) => {
