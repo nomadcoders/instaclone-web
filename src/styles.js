@@ -29,5 +29,6 @@ export const GlobalStyles = createGlobalStyle`
     }
     a {
       text-decoration: none;
+      color:inherit;
     }
 `;
